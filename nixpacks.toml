@@ -1,0 +1,5 @@
+[phases.setup]
+aptPkgs = ["libreoffice"]
+
+[start]
+cmd = "gunicorn web_app:app --bind 0.0.0.0:$PORT"

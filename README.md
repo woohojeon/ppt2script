@@ -6,7 +6,11 @@ Convert PowerPoint presentations into semantically rich text using Vision Langua
 
 ## Overview
 
-ppt2desc is a command-line tool that converts PowerPoint presentations into detailed textual descriptions. PowerPoint presentations are an inherently visual medium that often convey complex ideas through a combination of text, graphics, charts, and other visual layouts. This tool uses vision language models to not only transcribe the text content but also interpret and describe the visual elements and their relationships, capturing the full semantic meaning of each slide in a machine-readable format.
+ppt2desc is a tool that converts PowerPoint presentations into detailed textual descriptions. PowerPoint presentations are an inherently visual medium that often convey complex ideas through a combination of text, graphics, charts, and other visual layouts. This tool uses vision language models to not only transcribe the text content but also interpret and describe the visual elements and their relationships, capturing the full semantic meaning of each slide in a machine-readable format.
+
+**Available Interfaces:**
+- **Web UI**: User-friendly web interface for easy file upload and script generation (한국어 지원)
+- **CLI**: Command-line interface for batch processing and automation
 
 ## Features
 
@@ -34,7 +38,34 @@ ppt2desc is a command-line tool that converts PowerPoint presentations into deta
   - Option 2: Use the provided Docker container for LibreOffice.
 - vLLM API credentials
 
-## Installation
+## Quick Start (Web UI)
+
+The easiest way to use ppt2desc is through the web interface:
+
+### Deploy to Railway (Recommended)
+
+1. Fork this repository
+2. Sign up for [Railway](https://railway.app/)
+3. Click "New Project" → "Deploy from GitHub repo"
+4. Select your forked repository
+5. Railway will automatically detect and deploy using the Dockerfile
+6. Access your app at the provided Railway URL
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment instructions.
+
+### Run Locally
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the web server
+python web_app.py
+
+# Open browser to http://localhost:8080
+```
+
+## Installation (CLI)
 
 1. Clone the repository:
 ```bash

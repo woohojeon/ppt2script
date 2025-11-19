@@ -5,3 +5,13 @@ __pycache__/
 .DS_Store
 ppts/
 .venv/
+
+# Web app specific
+uploads/
+outputs/
+*.pyc
+.pytest_cache/
+instance/
+.coverage
+htmlcov/
+*.log
